@@ -44,9 +44,9 @@
 <div class="wrap">
   <div id="app"><p class="sub">Laden…</p></div>
   <div class="foot">
-    Je gegevens worden verzameld door <b>Terryn CommV</b> (ondernemingsnummer BE 0887.986.696, Stokrooieweg 23, 3511 Hasselt)
+    Uw gegevens worden verzameld door <b>Terryn CommV</b> (ondernemingsnummer BE 0887.986.696, Stokrooieweg 23, 3511 Hasselt)
     voor een op te bouwen overzicht van veiligheidsopleidingen in België.<br>
-    Vragen of verwijdering? Antwoord op de uitnodiging die je ontving.
+    Vragen of verwijdering? Stuur me gerust een bericht via <a href="https://www.linkedin.com/in/koen-terryn-1144aa2/" target="_blank" rel="noopener">LinkedIn</a>.
   </div>
 </div>
 <script>
@@ -87,8 +87,8 @@ function render(d){
    : (d.pre_fill?.aanbod||[]).map(a=>`<label class="chk"><input type="checkbox" class="aan" data-opl="${esc(a.opleiding)}" checked> ${esc(a.opleiding.split("::").pop())}</label>`).join("") || '<p class="hint">Nog niets gevonden — je kan dit straks aanvullen.</p>';
 
   app.innerHTML = `
-  <div class="banner">👋 Welkom, <b>${esc(v.naam)}</b>! Terryn CommV stelt een overzicht samen van wie in België opleidingen geeft rond veiligheid en welzijn op het werk — en jij staat op de lijst.
-     Om je aanbod correct te tonen, vulden we alvast in wat we op je website vonden. <b>Kijk het even na, verbeter waar nodig en vink je opleidingen aan</b> — in een paar minuten ben je klaar.
+  <div class="banner">👋 Welkom, <b>${esc(v.naam)}</b>! Terryn CommV stelt een overzicht samen van wie in België opleidingen geeft rond veiligheid en welzijn op het werk — en u staat op de lijst.
+     Om uw aanbod correct te tonen, vulden we alvast in wat we op uw website vonden. <b>Ziet u het zitten om uw gegevens even na te kijken, aan te vullen en waar nodig te verbeteren — en uw opleidingen aan te vinken?</b> Alvast bedankt voor uw hulp! Vragen? Stuur me gerust een berichtje via <a href="https://www.linkedin.com/in/koen-terryn-1144aa2/" target="_blank" rel="noopener" style="color:#0a5a52;font-weight:600">LinkedIn</a>.
      ${d.status==="preview"?'<span class="tag">preview</span>':""}</div>
 
   <div class="card">
