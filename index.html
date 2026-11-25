@@ -87,8 +87,8 @@ function render(d){
    : (d.pre_fill?.aanbod||[]).map(a=>`<label class="chk"><input type="checkbox" class="aan" data-opl="${esc(a.opleiding)}" checked> ${esc(a.opleiding.split("::").pop())}</label>`).join("") || '<p class="hint">Nog niets gevonden — je kan dit straks aanvullen.</p>';
 
   app.innerHTML = `
-  <div class="banner">👋 Dag <b>${esc(v.naam)}</b>. We hebben je gegevens alvast voor je ingevuld op basis van je website.
-     <b>Kijk ze na, corrigeer en vul aan</b> — dan staat je aanbod correct en geregistreerd.
+  <div class="banner">👋 Welkom, <b>${esc(v.naam)}</b>! Terryn CommV stelt een overzicht samen van wie in België opleidingen geeft rond veiligheid en welzijn op het werk — en jij staat op de lijst.
+     Om je aanbod correct te tonen, vulden we alvast in wat we op je website vonden. <b>Kijk het even na, verbeter waar nodig en vink je opleidingen aan</b> — in een paar minuten ben je klaar.
      ${d.status==="preview"?'<span class="tag">preview</span>':""}</div>
 
   <div class="card">
